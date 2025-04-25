@@ -30,7 +30,7 @@ Entretanto, em vez de apenas reproduzir o exemplo da aula (sobre massas dos plan
 
 ### Explicação detalhada do código
 
-- \*\*Classe \*\*\`\`:
+- Classe Tool:
   - Representa uma ferramenta utilizável pelo agente.
   - Define o nome, descrição, função Python e esquema de parâmetros da ferramenta.
 
@@ -43,7 +43,7 @@ class Tool:
         self.parameters_schema = parameters_schema
 ```
 
-- \*\*Classe \*\*\`\`:
+- Classe ReActAgent:
   - Controla o ciclo de iterações de pensamento (Thought), ação (Action) e observação (Observation).
   - Usa a API da OpenAI (`gpt-4-0613`) para tomar decisões com base nas mensagens acumuladas.
   - Faz até `max_steps` (5 por padrão), mas no exemplo utilizado foi configurado para **7 passos**.
